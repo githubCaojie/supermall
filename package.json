@@ -4,11 +4,15 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "json-server": "json-server --watch db.json",
+    "json:server:remote": "json-server http://jsonplaceholder.typicode.com/db"
   },
   "dependencies": {
     "axios": "^0.21.1",
+    "better-scroll": "^1.13.2",
     "core-js": "^3.6.5",
+    "json-server": "^0.16.3",
     "vue": "^2.6.11",
     "vue-router": "^3.4.9"
   },
