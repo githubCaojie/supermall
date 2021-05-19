@@ -2,12 +2,16 @@ import {request} from './request';
 
 export function getHomeMultidata() {
   return request({
-    url: '/homeMultidata'
+    url: '/home/multidata'
   })
 }
 
-export function getHomeGoods() {
+export function getHomeGoods(type, page) {
   return request({
-    url: '/homeData'
+    url: '/home/data',
+    params: {
+      type,
+      page
+    }
   })
 }
